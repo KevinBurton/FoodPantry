@@ -19,4 +19,5 @@ Run on a device or simulator:
 
 Share your app with testers, and test on device easily with the Ionic View companion app:
   http://view.ionic.io
-
+# Maps
+ API Key "FoodPantry" AIzaSyAQWxGbkdPJiKQrQUsEw-4OLQnwTmGKHq8
