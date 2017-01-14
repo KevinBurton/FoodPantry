@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="map-page">
   <h2>Welcome to Food Pantry App</h2>
   <p>
     This starter project comes with simple tabs-based layout for apps
@@ -14,4 +14,16 @@
     Take a look at the <code>src/pages/</code> directory to add or change tabs,
     update any existing page or create new pages.
   </p>
+  <sebm-google-map id="map"
+                   [latitude]="map.lat"
+                   [longitude]="map.lng"
+                   [zoom]="map.zoom">
+    <sebm-google-map-marker [latitude]="map.lat"
+                            [longitude]="map.lng"
+                            [label]="map.label">
+        <sebm-google-map-info-window>
+            <strong>{{map.info}}</strong>
+        </sebm-google-map-info-window>
+    </sebm-google-map-marker>
+  </sebm-google-map>
 </ion-content>
