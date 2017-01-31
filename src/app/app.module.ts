@@ -5,6 +5,8 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { MapService } from '../services/map.service';
+import { DeviceService } from '../services/device.service';
 
 import { AgmCoreModule } from 'angular2-google-maps/core';
 
@@ -28,6 +30,6 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
     HomePage,
     TabsPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [MapService, DeviceService, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}
